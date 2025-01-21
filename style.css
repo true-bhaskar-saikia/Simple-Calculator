@@ -1,0 +1,60 @@
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.calculator {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+#display {
+    width: 100%;
+    height: 50px;
+    font-size: 1.5rem;
+    text-align: right;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 2px solid #ccc; /* Display border color */
+    border-radius: 5px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    height: 50px;
+    font-size: 1.2rem;
+    color: black;
+    background: url('https://www.toptal.com/designers/subtlepatterns/patterns/light_wood.png');
+    background-size: cover;
+    border: 2px solid #ccc; /* Matches display border color */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    border-color: #999; /* Slightly darker border on hover */
+}
+
+.footer {
+    text-align: center;
+    margin-top: 15px;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 1.2rem;
+    color: #555;
+}
